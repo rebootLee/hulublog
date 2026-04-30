@@ -1,0 +1,78 @@
+baseURL = "https://hulublog.pages.dev/"
+locale = "zh-CN"
+title = "小葫芦成长记"
+theme = "stack"
+defaultContentLanguage = "zh-cn"
+
+[params]
+  mainSections = ["post"]
+  description = "记录小葫芦的成长点滴 🌱"
+  favicon = "/favicon.ico"
+
+  [params.sidebar]
+    emoji = "🌱"
+    subtitle = "运动 · 画画 · 学习 · 长大"
+
+  [params.footer]
+    since = 2019
+
+  [params.dateFormat]
+    published = "2006-01-02"
+
+  [params.article]
+    math = false
+    toc = false
+
+  [params.comments]
+    enabled = false
+
+[menu]
+  [[menu.main]]
+    identifier = "home"
+    name = "首页"
+    url = "/"
+    weight = -100
+    [menu.main.params]
+      icon = "home"
+
+  [[menu.main]]
+    identifier = "art"
+    name = "画作集"
+    url = "/categories/画作/"
+    weight = -90
+    [menu.main.params]
+      icon = "hash"
+
+  [[menu.main]]
+    identifier = "rugby"
+    name = "橄榄球"
+    url = "/categories/橄榄球/"
+    weight = -80
+    [menu.main.params]
+      icon = "tag"
+
+  [[menu.main]]
+    identifier = "growth"
+    name = "成长日志"
+    url = "/categories/成长/"
+    weight = -70
+    [menu.main.params]
+      icon = "date"
+
+  [[menu.main]]
+    identifier = "about"
+    name = "关于"
+    url = "/about"
+    weight = -60
+    [menu.main.params]
+      icon = "user"
+
+[taxonomies]
+  category = "categories"
+  tag = "tags"
+
+[markup]
+  [markup.highlight]
+    style = "dracula"
+  [markup.goldmark.renderer]
+    unsafe = true
