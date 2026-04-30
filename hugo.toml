@@ -52,6 +52,14 @@ defaultContentLanguage = "zh-cn"
       icon = "tag"
 
   [[menu.main]]
+    identifier = "badminton"
+    name = "羽毛球"
+    url = "/categories/羽毛球/"
+    weight = -75
+    [menu.main.params]
+      icon = "tag"
+
+  [[menu.main]]
     identifier = "growth"
     name = "成长日志"
     url = "/categories/成长/"
