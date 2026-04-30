@@ -1,26 +1,49 @@
-/* 侧边栏字体加大 */
+/* 全局基础字体加大 */
+:root {
+    --article-font-size: 1.2rem !important;
+}
+
+html {
+    font-size: 18px !important;
+}
+
+body {
+    font-size: 1.1rem !important;
+}
+
+/* 侧边栏 */
 .sidebar .site-name {
-    font-size: 1.8rem !important;
+    font-size: 2rem !important;
 }
 
 .sidebar .site-description {
-    font-size: 1.1rem !important;
+    font-size: 1.2rem !important;
 }
 
 .sidebar .menu li a {
-    font-size: 1.15rem !important;
+    font-size: 1.2rem !important;
 }
 
-.sidebar .section-title {
-    font-size: 1.1rem !important;
+/* 文章列表标题 */
+.article-list article .article-title {
+    font-size: 1.4rem !important;
 }
 
-/* 正文字体也适当加大 */
+/* 文章详情页 */
 .article-content {
-    font-size: 1.1rem !important;
-    line-height: 1.8 !important;
+    font-size: 1.2rem !important;
+    line-height: 1.9 !important;
 }
 
-.article-title {
-    font-size: 1.6rem !important;
+.article-header .article-title {
+    font-size: 2rem !important;
+}
+
+/* 分类/标签 */
+.section-title {
+    font-size: 1.2rem !important;
+}
+
+.article-subtitle {
+    font-size: 1.1rem !important;
 }
